@@ -1,0 +1,203 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "results": [
+    {
+      "projection": "q_a",
+      "M": 1,
+      "N": 1536,
+      "K": 7168,
+      "nvfp4_us": 44.8,
+      "bf16_us": 20.5,
+      "speedup": 0.457,
+      "nvfp4_tflops": 0.49,
+      "bf16_tflops": 1.08
+    },
+    {
+      "projection": "q_a",
+      "M": 8,
+      "N": 1536,
+      "K": 7168,
+      "nvfp4_us": 44.8,
+      "bf16_us": 36.4,
+      "speedup": 0.811,
+      "nvfp4_tflops": 3.93,
+      "bf16_tflops": 4.85
+    },
+    {
+      "projection": "q_a",
+      "M": 32,
+      "N": 1536,
+      "K": 7168,
+      "nvfp4_us": 44.4,
+      "bf16_us": 21.1,
+      "speedup": 0.475,
+      "nvfp4_tflops": 15.89,
+      "bf16_tflops": 33.47
+    },
+    {
+      "projection": "q_a",
+      "M": 128,
+      "N": 1536,
+      "K": 7168,
+      "nvfp4_us": 44.1,
+      "bf16_us": 28.5,
+      "speedup": 0.647,
+      "nvfp4_tflops": 63.92,
+      "bf16_tflops": 98.74
+    },
+    {
+      "projection": "q_a",
+      "M": 512,
+      "N": 1536,
+      "K": 7168,
+      "nvfp4_us": 67.2,
+      "bf16_us": 73.2,
+      "speedup": 1.089,
+      "nvfp4_tflops": 167.85,
+      "bf16_tflops": 154.12
+    },
+    {
+      "projection": "q_a",
+      "M": 1024,
+      "N": 1536,
+      "K": 7168,
+      "nvfp4_us": 67.1,
+      "bf16_us": 131.8,
+      "speedup": 1.963,
+      "nvfp4_tflops": 335.86,
+      "bf16_tflops": 171.07
+    },
+    {
+      "projection": "q_b",
+      "M": 1,
+      "N": 12288,
+      "K": 1536,
+      "nvfp4_us": 34.6,
+      "bf16_us": 23.7,
+      "speedup": 0.685,
+      "nvfp4_tflops": 1.09,
+      "bf16_tflops": 1.59
+    },
+    {
+      "projection": "q_b",
+      "M": 8,
+      "N": 12288,
+      "K": 1536,
+      "nvfp4_us": 34.5,
+      "bf16_us": 21.4,
+      "speedup": 0.621,
+      "nvfp4_tflops": 8.76,
+      "bf16_tflops": 14.11
+    },
+    {
+      "projection": "q_b",
+      "M": 32,
+      "N": 12288,
+      "K": 1536,
+      "nvfp4_us": 33.7,
+      "bf16_us": 23.9,
+      "speedup": 0.709,
+      "nvfp4_tflops": 35.85,
+      "bf16_tflops": 50.53
+    },
+    {
+      "projection": "q_b",
+      "M": 128,
+      "N": 12288,
+      "K": 1536,
+      "nvfp4_us": 29.3,
+      "bf16_us": 44.0,
+      "speedup": 1.502,
+      "nvfp4_tflops": 165.02,
+      "bf16_tflops": 109.89
+    },
+    {
+      "projection": "q_b",
+      "M": 512,
+      "N": 12288,
+      "K": 1536,
+      "nvfp4_us": 48.2,
+      "bf16_us": 110.2,
+      "speedup": 2.285,
+      "nvfp4_tflops": 400.78,
+      "bf16_tflops": 175.37
+    },
+    {
+      "projection": "q_b",
+      "M": 1024,
+      "N": 12288,
+      "K": 1536,
+      "nvfp4_us": 60.0,
+      "bf16_us": 204.3,
+      "speedup": 3.407,
+      "nvfp4_tflops": 644.59,
+      "bf16_tflops": 189.22
+    },
+    {
+      "projection": "o_proj",
+      "M": 1,
+      "N": 7168,
+      "K": 8192,
+      "nvfp4_us": 58.3,
+      "bf16_us": 63.4,
+      "speedup": 1.087,
+      "nvfp4_tflops": 2.01,
+      "bf16_tflops": 1.85
+    },
+    {
+      "projection": "o_proj",
+      "M": 8,
+      "N": 7168,
+      "K": 8192,
+      "nvfp4_us": 58.1,
+      "bf16_us": 83.7,
+      "speedup": 1.44,
+      "nvfp4_tflops": 16.16,
+      "bf16_tflops": 11.22
+    },
+    {
+      "projection": "o_proj",
+      "M": 32,
+      "N": 7168,
+      "K": 8192,
+      "nvfp4_us": 52.9,
+      "bf16_us": 88.6,
+      "speedup": 1.676,
+      "nvfp4_tflops": 71.05,
+      "bf16_tflops": 42.4
+    },
+    {
+      "projection": "o_proj",
+      "M": 128,
+      "N": 7168,
+      "K": 8192,
+      "nvfp4_us": 48.0,
+      "bf16_us": 111.2,
+      "speedup": 2.318,
+      "nvfp4_tflops": 313.38,
+      "bf16_tflops": 135.22
+    },
+    {
+      "projection": "o_proj",
+      "M": 512,
+      "N": 7168,
+      "K": 8192,
+      "nvfp4_us": 75.5,
+      "bf16_us": 361.4,
+      "speedup": 4.79,
+      "nvfp4_tflops": 796.88,
+      "bf16_tflops": 166.38
+    },
+    {
+      "projection": "o_proj",
+      "M": 1024,
+      "N": 7168,
+      "K": 8192,
+      "nvfp4_us": 155.6,
+      "bf16_us": 663.2,
+      "speedup": 4.263,
+      "nvfp4_tflops": 773.11,
+      "bf16_tflops": 181.34
+    }
+  ]
+}

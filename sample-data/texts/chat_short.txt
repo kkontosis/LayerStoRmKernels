@@ -1,0 +1,46 @@
+
+User: Write a JavaScript function that takes in one parameter and checks if that parameter is a perfect square. The function should return a boolean value - true if the parameter is a perfect square and false otherwise. You should test your function using a range of inputs and provide the output for each test case.
+Assistant: ```
+function isPerfectSquare(num) {
+  if (num < 0) {
+    return false;
+  }
+  else if (Math.sqrt(num) === Math.floor(Math.sqrt(num))) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+console.log(isPerfectSquare(16)); // true
+console.log(isPerfectSquare(25)); // true
+console.log(isPerfectSquare(144)); // true
+console.log(isPerfectSquare(7)); // false
+console.log(isPerfectSquare(-25)); // false
+```
+User: Great, the function looks good! Can you add some comments to explain what each line of code is doing?
+Assistant: Sure, here is the updated function with comments:
+
+```
+function isPerfectSquare(num) {
+  if (num < 0) { // check if the number is negative
+    return false;
+  }
+  else if (Math.sqrt(num) === Math.floor(Math.sqrt(num))) { // calculate the square root of num and check if it is a whole number
+    return true; // if it is a whole number, return true
+  }
+  else {
+    return false; // otherwise, return false
+  }
+}
+
+// testing the function with different inputs
+console.log(isPerfectSquare(16)); // true
+console.log(isPerfectSquare(25)); // true
+console.log(isPerfectSquare(144)); // true
+console.log(isPerfectSquare(7)); // false
+console.log(isPerfectSquare(-25)); // false
+```
+
+I hope this helps!

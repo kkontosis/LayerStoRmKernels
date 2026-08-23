@@ -1,0 +1,219 @@
+{
+  "benchmark": "v4_splitkv_scaling",
+  "timestamp": "2026-04-26T18:00:38.580574+00:00",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "config": {
+    "topk": 1024,
+    "h_q": 64,
+    "s_kv": 4096,
+    "page_size": 64,
+    "warmup": 10,
+    "iters": 100
+  },
+  "results": {
+    "batch=1": {
+      "nsp=1": {
+        "median_us": 2109.8,
+        "min_us": 2106.7,
+        "p95_us": 2112.3,
+        "mean_us": 2109.8,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=2": {
+        "median_us": 1212.0,
+        "min_us": 1210.0,
+        "p95_us": 1213.7,
+        "mean_us": 1212.2,
+        "cosine_vs_nsp1": 0.99744
+      },
+      "nsp=4": {
+        "median_us": 710.5,
+        "min_us": 707.1,
+        "p95_us": 712.2,
+        "mean_us": 710.4,
+        "cosine_vs_nsp1": 0.995689
+      },
+      "nsp=8": {
+        "median_us": 455.9,
+        "min_us": 454.2,
+        "p95_us": 458.3,
+        "mean_us": 456.2,
+        "cosine_vs_nsp1": 0.994885
+      },
+      "nsp=16": {
+        "median_us": 322.8,
+        "min_us": 320.3,
+        "p95_us": 326.0,
+        "mean_us": 323.3,
+        "cosine_vs_nsp1": 0.993097
+      },
+      "nsp=32": {
+        "median_us": 192.0,
+        "min_us": 190.3,
+        "p95_us": 194.0,
+        "mean_us": 192.4,
+        "cosine_vs_nsp1": 0.992338
+      },
+      "nsp=64": {
+        "median_us": 192.0,
+        "min_us": 190.3,
+        "p95_us": 194.1,
+        "mean_us": 192.3,
+        "cosine_vs_nsp1": 0.992338
+      }
+    },
+    "batch=4": {
+      "nsp=1": {
+        "median_us": 8391.6,
+        "min_us": 8385.8,
+        "p95_us": 8395.1,
+        "mean_us": 8391.7,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=2": {
+        "median_us": 4249.7,
+        "min_us": 4243.7,
+        "p95_us": 4255.3,
+        "mean_us": 4251.3,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=4": {
+        "median_us": 2152.9,
+        "min_us": 2150.8,
+        "p95_us": 2154.2,
+        "mean_us": 2153.0,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=8": {
+        "median_us": 1265.1,
+        "min_us": 1261.8,
+        "p95_us": 1272.4,
+        "mean_us": 1265.7,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=16": {
+        "median_us": 724.8,
+        "min_us": 722.7,
+        "p95_us": 727.5,
+        "mean_us": 726.2,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=32": {
+        "median_us": 457.4,
+        "min_us": 454.4,
+        "p95_us": 459.4,
+        "mean_us": 457.7,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=64": {
+        "median_us": 330.4,
+        "min_us": 327.3,
+        "p95_us": 332.2,
+        "mean_us": 330.3,
+        "cosine_vs_nsp1": 1.0
+      }
+    },
+    "batch=8": {
+      "nsp=1": {
+        "median_us": 16749.9,
+        "min_us": 16742.5,
+        "p95_us": 16754.8,
+        "mean_us": 16750.1,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=2": {
+        "median_us": 8375.8,
+        "min_us": 8372.7,
+        "p95_us": 8379.0,
+        "mean_us": 8376.5,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=4": {
+        "median_us": 4280.2,
+        "min_us": 4277.7,
+        "p95_us": 4282.8,
+        "mean_us": 4280.5,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=8": {
+        "median_us": 2198.6,
+        "min_us": 2195.8,
+        "p95_us": 2201.2,
+        "mean_us": 2198.9,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=16": {
+        "median_us": 1272.4,
+        "min_us": 1268.9,
+        "p95_us": 1274.5,
+        "mean_us": 1272.3,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=32": {
+        "median_us": 735.1,
+        "min_us": 731.9,
+        "p95_us": 737.0,
+        "mean_us": 735.2,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=64": {
+        "median_us": 480.2,
+        "min_us": 476.2,
+        "p95_us": 483.6,
+        "mean_us": 480.2,
+        "cosine_vs_nsp1": 1.0
+      }
+    },
+    "batch=32": {
+      "nsp=1": {
+        "median_us": 66895.1,
+        "min_us": 66876.4,
+        "p95_us": 66916.4,
+        "mean_us": 66898.3,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=2": {
+        "median_us": 33419.2,
+        "min_us": 33410.8,
+        "p95_us": 33428.3,
+        "mean_us": 33420.0,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=4": {
+        "median_us": 17010.8,
+        "min_us": 17000.7,
+        "p95_us": 17017.2,
+        "mean_us": 17011.4,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=8": {
+        "median_us": 8713.9,
+        "min_us": 8709.4,
+        "p95_us": 8717.4,
+        "mean_us": 8714.4,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=16": {
+        "median_us": 4390.7,
+        "min_us": 4385.2,
+        "p95_us": 4398.1,
+        "mean_us": 4391.3,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=32": {
+        "median_us": 2431.7,
+        "min_us": 2429.0,
+        "p95_us": 2435.0,
+        "mean_us": 2431.8,
+        "cosine_vs_nsp1": 1.0
+      },
+      "nsp=64": {
+        "median_us": 1491.8,
+        "min_us": 1487.8,
+        "p95_us": 1494.4,
+        "mean_us": 1491.7,
+        "cosine_vs_nsp1": 1.0
+      }
+    }
+  }
+}

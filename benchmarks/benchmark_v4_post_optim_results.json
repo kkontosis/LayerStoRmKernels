@@ -1,0 +1,102 @@
+{
+  "env": {
+    "timestamp": "2026-04-27T13:26:07.499426+00:00",
+    "torch": "2.9.1+cu130",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "decode": [
+    {
+      "name": "CSA FP8 s=256 tk=256",
+      "baseline_us": 554.9280047416687,
+      "optimized_us": 181.5039962530136
+    },
+    {
+      "name": "CSA FP8 s=1024 tk=1024",
+      "baseline_us": 2108.2879304885864,
+      "optimized_us": 192.01599806547165
+    },
+    {
+      "name": "CSA FP8 s=4096 tk=1024",
+      "baseline_us": 2126.911997795105,
+      "optimized_us": 193.37600469589233
+    },
+    {
+      "name": "CSA FP8 s=16384 tk=1024",
+      "baseline_us": 2116.895914077759,
+      "optimized_us": 192.07999855279922
+    },
+    {
+      "name": "CSA TQ s=256 tk=256",
+      "baseline_us": 96.39999642968178,
+      "optimized_us": 70.89600339531898
+    },
+    {
+      "name": "CSA TQ s=1024 tk=1024",
+      "baseline_us": 349.69601035118103,
+      "optimized_us": 120.41600048542023
+    },
+    {
+      "name": "CSA TQ s=4096 tk=1024",
+      "baseline_us": 351.6800105571747,
+      "optimized_us": 120.68800255656242
+    },
+    {
+      "name": "CSA TQ s=16384 tk=1024",
+      "baseline_us": 351.80801153182983,
+      "optimized_us": 121.11999839544296
+    }
+  ],
+  "tq_k_append": [
+    {
+      "name": "TQ k_append N=1",
+      "baseline_us": 192.03199446201324,
+      "optimized_us": 28.224000707268715
+    },
+    {
+      "name": "TQ k_append N=16",
+      "baseline_us": 193.15199553966522,
+      "optimized_us": 28.192000463604927
+    },
+    {
+      "name": "TQ k_append N=64",
+      "baseline_us": 193.31200420856476,
+      "optimized_us": 28.20800058543682
+    },
+    {
+      "name": "TQ k_append N=256",
+      "baseline_us": 378.35200130939484,
+      "optimized_us": 28.12799997627735
+    },
+    {
+      "name": "TQ k_append N=1024",
+      "baseline_us": 1340.0160074234009,
+      "optimized_us": 32.255999743938446
+    }
+  ],
+  "e2e": [
+    {
+      "nc": 1024,
+      "topk": 512,
+      "fp8_base": 1088.416039943695,
+      "fp8_opt": 193.743996322155,
+      "tq_base": 1535.311996936798,
+      "tq_opt": 149.6800035238266
+    },
+    {
+      "nc": 4096,
+      "topk": 1024,
+      "fp8_base": 2127.951979637146,
+      "fp8_opt": 218.01600605249405,
+      "tq_base": 5215.279817581177,
+      "tq_opt": 205.08800446987152
+    },
+    {
+      "nc": 16384,
+      "topk": 1024,
+      "fp8_base": 2241.152048110962,
+      "fp8_opt": 306.3039928674698,
+      "tq_base": 19755.552291870117,
+      "tq_opt": 434.1759979724884
+    }
+  ]
+}

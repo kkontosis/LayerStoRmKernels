@@ -1,0 +1,16 @@
+# Instruction:
+Create a nested loop to print every combination of numbers between 0-9, excluding any combination that contains the number 5. Additionally, exclude any combination that contains a repeating digit. Implement the solution without using any built-in functions or libraries to check for repeating digits.
+
+# Solution:
+Here is an example of a nested loop in Python to print every combination of numbers between 0-9, excluding any combination that contains the number 5 or repeating digits:
+
+```python
+for i in range(10):  # First digit
+    for j in range(10):  # Second digit
+        for k in range(10):  # Third digit
+            # Checking for the conditions
+            if i != 5 and j != 5 and k != 5 and i != j and i != k and j != k:
+                print(i, j, k)
+```
+
+This code will generate and print every combination of three digits between 0-9 that do not contain the number 5 and do not have any repeating digits.

@@ -1,0 +1,45 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "results": [
+    {
+      "s_kv": 256,
+      "tq_full_us": 176.45696640014648,
+      "tq_decode_us": 153.94368171691895,
+      "tq_q_rotate_us": 94.87615585327148,
+      "snap_decode_us": 182.38304138183594,
+      "ratio": 0.9675075328452131,
+      "tq_bytes_per_token": 386,
+      "snap_bytes_per_token": 644
+    },
+    {
+      "s_kv": 1024,
+      "tq_full_us": 217.10432052612305,
+      "tq_decode_us": 194.5897674560547,
+      "tq_q_rotate_us": 94.56928253173828,
+      "snap_decode_us": 671.6102600097656,
+      "ratio": 0.323259386363404,
+      "tq_bytes_per_token": 386,
+      "snap_bytes_per_token": 644
+    },
+    {
+      "s_kv": 4096,
+      "tq_full_us": 367.5632095336914,
+      "tq_decode_us": 344.9750518798828,
+      "tq_q_rotate_us": 94.40287590026855,
+      "snap_decode_us": 2631.5103149414062,
+      "ratio": 0.13967766246125304,
+      "tq_bytes_per_token": 386,
+      "snap_bytes_per_token": 644
+    },
+    {
+      "s_kv": 16384,
+      "tq_full_us": 903.8153839111328,
+      "tq_decode_us": 880.2304077148438,
+      "tq_q_rotate_us": 94.29856300354004,
+      "snap_decode_us": 10464.613037109375,
+      "ratio": 0.08636873439142403,
+      "tq_bytes_per_token": 386,
+      "snap_bytes_per_token": 644
+    }
+  ]
+}
