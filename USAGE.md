@@ -264,6 +264,6 @@ For C++ integration: include `csrc/` headers, compile `.cu` files with `-arch=sm
 
 ## License
 
-Licensed under the Apache License 2.0 — see `LICENSE.md`. Third-party
+Licensed under the MIT License — see `LICENSE.md`. Third-party
 attributions and license notices (FlashMLA, SGLang, vLLM, TensorRT-LLM,
 CUTLASS, sample-data sources) are collected in `THIRD_PARTY_NOTICES.md`.

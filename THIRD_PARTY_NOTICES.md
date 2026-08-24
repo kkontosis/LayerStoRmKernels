@@ -103,7 +103,7 @@ No model weights are distributed in this repository.
 Per-file dataset provenance and licenses are recorded in
 `sample-data/texts/SOURCES.md`. Note in particular that `prose_short.txt` and
 `prose_long.txt` are English Wikipedia article text and remain under
-CC BY-SA 3.0 (attribution in `SOURCES.md`), not this repository's Apache-2.0
+CC BY-SA 3.0 (attribution in `SOURCES.md`), not this repository's MIT license
 license.
 
 ---
@@ -169,7 +169,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## Appendix C — Apache License 2.0
 
-The Apache License 2.0 text is reproduced in this repository as `LICENSE.md`.
+This repository is licensed under the MIT License — see `LICENSE.md`.
 It applies both to LayerStoRmKernels itself (Copyright 2026 Kimon Kontosis)
 and to the Apache-2.0-licensed upstream material identified above (SGLang,
 vLLM, NVIDIA TensorRT-LLM).
