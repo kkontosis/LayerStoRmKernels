@@ -1,5 +1,7 @@
 # USAGE.md — SM120 SnapMLA Kernel Library
 
+> **Dependencies note:** release archives don't carry submodule contents — clone CUTLASS (see `.gitmodules`) into `3rd-party/cutlass` before building.
+
 ## What This Is
 
 CUDA kernel library for MLA (Multi-head Latent Attention) inference on SM120 GPUs (RTX 5090/5080). Provides the complete attention pipeline: FP8 decode, BF16 prefill, KV cache management, split-KV scheduling, DCP correction, and CUDA graph capture.
